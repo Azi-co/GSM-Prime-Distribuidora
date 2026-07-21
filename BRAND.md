@@ -43,6 +43,8 @@ Faixas diagonais inspiradas em fita de embalagem e no movimento do filme stretch
 
 Solanie Santos e Paulo Guimarães são dois vendedores que decidiram entrar em sociedade para construir algo maior do que uma carteira individual de clientes. A narrativa provisória da marca deve reforçar essa origem: atendimento direto, conhecimento da rotina de compra e vontade de criar uma distribuidora confiável para empresas que precisam repor embalagens sem perder tempo.
 
+As fotos atuais do site são placeholders gerados para simular direção visual e devem ser substituídas por fotos reais dos fundadores antes da veiculação final.
+
 ### Solanie Santos
 
 - Sócia fundadora, frente comercial e relacionamento com clientes.
