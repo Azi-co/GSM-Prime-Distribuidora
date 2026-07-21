@@ -110,6 +110,15 @@
             <p>Fitas para caixa, fechamento, reforço e uso contínuo em expedição.</p>
           </article>
         </div>
+        <div class="carousel-controls product-controls" aria-label="Navegação de produtos">
+          <button type="button" class="icon-button" data-carousel-prev="products" aria-label="Produto anterior">
+            <i data-lucide="chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="carousel-dots" data-carousel-dots="products" aria-hidden="true"></div>
+          <button type="button" class="icon-button" data-carousel-next="products" aria-label="Próximo produto">
+            <i data-lucide="chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
       </section>
 
       <section class="section founders" id="fundadores" aria-labelledby="founders-title">
@@ -118,8 +127,20 @@
           <h2 id="founders-title">Dois vendedores, uma sociedade e uma meta maior.</h2>
           <p>Solanie Santos e Paulo Guimarães começaram no balcão, na rua e no atendimento direto a empresas. Depois de anos ouvindo as mesmas dores de clientes, decidiram unir carteira, experiência e presença comercial para construir uma distribuidora com resposta rápida, compromisso e relação de longo prazo.</p>
         </div>
-        <div class="founder-grid">
-          <article class="founder-card">
+        <div class="founder-spotlight" aria-live="polite">
+          <span class="founder-kicker">Agora na tela</span>
+          <h3 data-founder-name>Solanie Santos</h3>
+          <p data-founder-description>Com trajetória em vendas consultivas e atendimento a pequenos negócios, Solanie organiza pedidos, cotações recorrentes e o acompanhamento de pós-venda.</p>
+          <div class="spotlight-meta">
+            <span data-founder-role>Sócia fundadora | Comercial</span>
+            <a class="mini-button founder-whatsapp" href="#" data-founder-active="solanie">
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Chamar
+            </a>
+          </div>
+        </div>
+        <div class="founder-grid" aria-label="Fundadores da GSM Prime">
+          <article class="founder-card is-active" data-founder-card="solanie" data-founder-name="Solanie Santos" data-founder-role="Sócia fundadora | Comercial" data-founder-description="Com trajetória em vendas consultivas e atendimento a pequenos negócios, Solanie organiza pedidos, cotações recorrentes e o acompanhamento de pós-venda.">
             <div class="founder-photo placeholder" aria-hidden="true">SS</div>
             <div class="founder-content">
               <span class="founder-role">Sócia fundadora | Comercial</span>
@@ -145,7 +166,7 @@
             </div>
           </article>
 
-          <article class="founder-card">
+          <article class="founder-card" data-founder-card="paulo" data-founder-name="Paulo Guimarães" data-founder-role="Sócio fundador | Operações" data-founder-description="Paulo vem da rotina comercial de distribuição, onde prazo, estoque e entrega precisam conversar sem ruído. Na GSM Prime, estrutura fornecedores, disponibilidade de itens e combinados de entrega.">
             <div class="founder-photo placeholder" aria-hidden="true">PG</div>
             <div class="founder-content">
               <span class="founder-role">Sócio fundador | Operações</span>
@@ -170,6 +191,15 @@
               </div>
             </div>
           </article>
+        </div>
+        <div class="carousel-controls founder-controls" aria-label="Navegação de fundadores">
+          <button type="button" class="icon-button" data-carousel-prev="founders" aria-label="Fundador anterior">
+            <i data-lucide="chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="carousel-dots" data-carousel-dots="founders" aria-hidden="true"></div>
+          <button type="button" class="icon-button" data-carousel-next="founders" aria-label="Próximo fundador">
+            <i data-lucide="chevron-right" aria-hidden="true"></i>
+          </button>
         </div>
       </section>
 
