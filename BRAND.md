@@ -39,6 +39,17 @@ Faixas diagonais inspiradas em fita de embalagem e no movimento do filme stretch
 - Atendimento para Rio de Janeiro e região metropolitana.
 - Cotação pelo WhatsApp com lista de itens, quantidade e local de entrega.
 
+## Dados cadastrais
+
+- Razão social: GSM Prime Distribuidora LTDA.
+- CNPJ: `66.986.960/0001-80`.
+- Data de abertura: `26/05/2026`.
+- Atividade principal: `46.86-9-02 - Comércio atacadista de embalagens`.
+- Atividades secundárias: `46.47-8-01 - Comércio atacadista de artigos de escritório e de papelaria`; `46.89-3-99 - Comércio atacadista especializado em outros produtos intermediários não especificados anteriormente`.
+- Natureza jurídica: `206-2 - Sociedade Empresária Limitada`.
+- Endereço: `R. Otavio Coimbra, 99 - Cidade de Deus, Rio de Janeiro - RJ, 22775-740`.
+- E-mail cadastral/administrativo: `RWACONT@YAHOO.COM.BR`.
+
 ## Fundadores
 
 Solanie Santos e Paulo Guimarães são dois vendedores que decidiram entrar em sociedade para construir algo maior do que uma carteira individual de clientes. A narrativa provisória da marca deve reforçar essa origem: atendimento direto, conhecimento da rotina de compra e vontade de criar uma distribuidora confiável para empresas que precisam repor embalagens sem perder tempo.
@@ -49,10 +60,10 @@ As fotos atuais do site são placeholders gerados para simular direção visual 
 
 - Sócia fundadora, frente comercial e relacionamento com clientes.
 - Texto provisório: experiência em vendas B2B, organização de pedidos, cotações recorrentes e pós-venda.
-- Dados provisórios para substituir: `solanie@gsmprime.com.br`, WhatsApp `5521988880001`.
+- WhatsApp: `+55 21 98376-6288`.
 
 ### Paulo Guimarães
 
 - Sócio fundador, frente operacional, fornecedores e entrega.
 - Texto provisório: experiência em distribuição, disponibilidade de produtos, prazo e rotina de expedição.
-- Dados provisórios para substituir: `paulo@gsmprime.com.br`, WhatsApp `5521988880002`.
+- WhatsApp: `+55 21 97159-4481`.

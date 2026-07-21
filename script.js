@@ -1,7 +1,7 @@
-const WHATSAPP_NUMBER = "5521999999999";
+const WHATSAPP_NUMBER = "5521983766288";
 const FOUNDER_WHATSAPP = {
-  solanie: "5521988880001",
-  paulo: "5521988880002",
+  solanie: "5521983766288",
+  paulo: "5521971594481",
 };
 
 function buildWhatsAppUrl(message) {

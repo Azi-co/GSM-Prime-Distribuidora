@@ -925,23 +925,49 @@ textarea:focus {
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(190px, 0.7fr) minmax(280px, 1.3fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  gap: 24px;
   padding: 30px clamp(20px, 6vw, 72px);
   color: var(--muted);
   background: var(--white);
   border-top: 1px solid var(--line);
 }
 
-.footer img {
+.footer-brand img {
   width: 180px;
+}
+
+.footer-brand p {
+  margin: 10px 0 0;
+  color: var(--graphite);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 16px;
+  text-align: right;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.footer-info a {
+  color: var(--teal);
+}
+
+.footer-info span,
+.footer-info a {
+  overflow-wrap: anywhere;
 }
 
 .footer p {
   margin: 0;
-  text-align: right;
 }
 
 @media (max-width: 960px) {
@@ -1231,10 +1257,11 @@ textarea:focus {
 
   .footer {
     align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
-  .footer p {
+  .footer-info {
+    justify-content: flex-start;
     text-align: left;
   }
 }
