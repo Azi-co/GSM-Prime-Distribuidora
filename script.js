@@ -97,6 +97,21 @@ function initCarousel(name, trackSelector, onChange) {
 
 initCarousel("products", ".product-grid");
 
+let founderRevealTimer;
+
+function presentFounderCard() {
+  const section = document.querySelector(".founders");
+  if (!section || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  window.clearTimeout(founderRevealTimer);
+  section.classList.remove("has-settled");
+  section.classList.add("is-presenting");
+  founderRevealTimer = window.setTimeout(() => {
+    section.classList.remove("is-presenting");
+    section.classList.add("has-settled");
+  }, 1150);
+}
+
 initCarousel("founders", ".founder-grid", (slide) => {
   const founder = slide.dataset.founderCard;
   const name = slide.dataset.founderName;
@@ -111,7 +126,19 @@ initCarousel("founders", ".founder-grid", (slide) => {
   if (roleEl && role) roleEl.textContent = role;
   if (descriptionEl && description) descriptionEl.textContent = description;
   if (activeLink && founder) setFounderLink(activeLink, founder);
+  presentFounderCard();
 });
+
+const foundersSection = document.querySelector(".founders");
+if (foundersSection && "IntersectionObserver" in window) {
+  const founderObserver = new IntersectionObserver((entries, observer) => {
+    if (entries.some((entry) => entry.isIntersecting)) {
+      presentFounderCard();
+      observer.disconnect();
+    }
+  }, { threshold: 0.38 });
+  founderObserver.observe(foundersSection);
+}
 
 document.querySelector("#quote-form")?.addEventListener("submit", (event) => {
   event.preventDefault();
