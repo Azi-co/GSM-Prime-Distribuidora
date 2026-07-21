@@ -65,7 +65,9 @@ function initCarousel(name, trackSelector, onChange) {
   let scrollTimer;
 
   function activate(index, shouldScroll = false) {
-    activeIndex = Math.max(0, Math.min(index, slides.length - 1));
+    const nextIndex = Math.max(0, Math.min(index, slides.length - 1));
+    const didChange = nextIndex !== activeIndex;
+    activeIndex = nextIndex;
     slides.forEach((slide, slideIndex) => {
       slide.classList.toggle("is-active", slideIndex === activeIndex);
     });
@@ -75,7 +77,7 @@ function initCarousel(name, trackSelector, onChange) {
     if (shouldScroll) {
       slides[activeIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
     }
-    onChange?.(slides[activeIndex], activeIndex);
+    onChange?.(slides[activeIndex], activeIndex, didChange);
   }
 
   prev?.addEventListener("click", () => activate(activeIndex - 1, true));
@@ -112,7 +114,7 @@ function presentFounderCard() {
   }, 1150);
 }
 
-initCarousel("founders", ".founder-grid", (slide) => {
+initCarousel("founders", ".founder-grid", (slide, _activeIndex, didChange) => {
   const founder = slide.dataset.founderCard;
   const name = slide.dataset.founderName;
   const role = slide.dataset.founderRole;
@@ -126,7 +128,7 @@ initCarousel("founders", ".founder-grid", (slide) => {
   if (roleEl && role) roleEl.textContent = role;
   if (descriptionEl && description) descriptionEl.textContent = description;
   if (activeLink && founder) setFounderLink(activeLink, founder);
-  presentFounderCard();
+  if (didChange) presentFounderCard();
 });
 
 const foundersSection = document.querySelector(".founders");
