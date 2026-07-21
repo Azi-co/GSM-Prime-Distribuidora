@@ -1,0 +1,10 @@
+<svg width="304" height="72" viewBox="0 0 304 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GSM Prime Distribuidora</title>
+  <desc id="desc">Marca provisoria da GSM Prime com simbolo inspirado em bobina e filme stretch.</desc>
+  <rect width="72" height="72" rx="14" fill="#121820"/>
+  <path d="M18 44.5C18 33.454 26.954 24.5 38 24.5H54V32.5H38C31.373 32.5 26 37.873 26 44.5C26 51.127 31.373 56.5 38 56.5H56V64.5H38C26.954 64.5 18 55.546 18 44.5Z" fill="#00A4A6"/>
+  <path d="M18 28C18 16.954 26.954 8 38 8H54V16H38C31.373 16 26 21.373 26 28C26 34.627 31.373 40 38 40H56V48H38C26.954 48 18 39.046 18 28Z" fill="#F2B705"/>
+  <path d="M38 20H59C61.761 20 64 22.239 64 25V47C64 49.761 61.761 52 59 52H38V44H56V28H38V20Z" fill="#F4F7F7"/>
+  <text x="92" y="34" fill="#121820" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">GSM Prime</text>
+  <text x="94" y="55" fill="#52606D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2.8">DISTRIBUIDORA</text>
+</svg>
