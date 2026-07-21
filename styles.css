@@ -572,6 +572,7 @@ h1 span {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+  align-items: stretch;
 }
 
 .founder-card.is-active {
@@ -584,6 +585,8 @@ h1 span {
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 22px;
+  align-items: stretch;
+  min-height: 384px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 8px;
@@ -603,7 +606,7 @@ h1 span {
 }
 
 .founder-photo {
-  min-height: 220px;
+  min-height: 100%;
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -620,6 +623,9 @@ h1 span {
 
 .founder-content {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .founder-role {
@@ -647,10 +653,16 @@ h1 span {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
-  margin: 18px 0;
+  margin: auto 0 18px;
+  padding-top: 22px;
 }
 
 .founder-facts div {
+  min-width: 0;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 12px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
@@ -668,6 +680,7 @@ h1 span {
   color: var(--white);
   font-size: 0.92rem;
   font-weight: 800;
+  line-height: 1.18;
 }
 
 .founder-actions {
